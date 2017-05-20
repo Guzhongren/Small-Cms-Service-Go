@@ -1,0 +1,1 @@
+./news --config config
