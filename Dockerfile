@@ -1,4 +1,5 @@
-FROM scatch
-ADD ["./linux/", '/Server']
-WORKDIR /Server
+FROM scratch
+LABEL maintainer='guzhongren@live.cn'
+COPY ["./linux/", "/Server/"]
+WORKDIR /Server/
 ENTRYPOINT [ "./run.sh" ]
